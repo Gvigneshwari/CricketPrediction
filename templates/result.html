@@ -1,0 +1,106 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Prediction Result</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <link rel="icon" href="{% static 'images/cricket.jpg' %}" />
+  </head>
+  <body>
+    <center>
+      <div class="chart-gallery">
+        <div class="chart-card">
+          <img
+            src="{% static 'images/' %}{{ match_id }}chart1.png"
+            alt="Win Probability"
+          />
+          <h3>Win Probability</h3>
+        </div>
+
+        <div class="chart-card">
+          <img
+            src="{% static 'images/' %}{{match_id}}chart2.png"
+            alt="Final Win Probability"
+          />
+          <h3>Final Win Probability</h3>
+        </div>
+
+        <div class="chart-card">
+          <img
+            src="{% static 'images/' %}{{match_id}}chart3.png"
+            alt="Venue Stats"
+          />
+          <h3>Venue Stats</h3>
+        </div>
+
+        <div class="chart-card">
+          <img
+            src="{% static 'images/' %}{{match_id}}chart4.png"
+            alt="PastChase Win %"
+          />
+          <h3>Past Chase Win Percentage</h3>
+        </div>
+
+        <div class="chart-card">
+          <img
+            src="{% static 'images/' %}{{match_id}}chart5.png"
+            alt="Team Rank"
+          />
+          <h3>Team Rank Table</h3>
+        </div>
+
+        <div class="chart-card">
+          <img
+            src="{% static 'images/' %}{{match_id}}chart6.png"
+            alt="Batter"
+          />
+          <h3>No.1 Batter</h3>
+        </div>
+
+        <div class="chart-card">
+          <img
+            src="{% static 'images/' %}{{match_id}}chart7.png"
+            alt="Bowler"
+          />
+          <h3>No.1 Bowler</h3>
+        </div>
+
+        <div class="chart-card">
+          <img
+            src="{% static 'images/' %}{{match_id}}chart8.png"
+            alt="Top Performing Batters"
+          />
+          <h3>Top Performing Batters</h3>
+        </div>
+
+        <div class="chart-card">
+          <img
+            src="{% static 'images/' %}{{match_id}}chart9.png"
+            alt="Top Performing Bowlers"
+          />
+          <h3>Top Performing Bowlers</h3>
+        </div>
+
+        <div class="chart-card">
+          <img
+            src="{% static 'images/' %}{{match_id}}chart10.png"
+            alt="Type of runs"
+          />
+          <h3>Type of runs</h3>
+        </div>
+
+        <div class="chart-card">
+          <img src="{% static 'images/' %}{{match_id}}chart11.png" alt="Runs" />
+          <h3>Runs in each over</h3>
+        </div>
+
+        <div class="chart-card">
+          <img src="{% static 'images/' %}{{match_id}}chart12.png" alt="Runs" />
+          <h3>Score comparison</h3>
+        </div>
+      </div>
+
+      <a href="{% url 'home' %}">Back to Home</a>
+    </center>
+  </body>
+</html>

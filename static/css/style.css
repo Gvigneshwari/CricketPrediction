@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #4facfe, #00f2fe);
+    margin: 0;
+    padding: 0;
+}
+
+center {
+    display: block;
+    margin-top: 100px;
+}
+
+h1 {
+    color: #ffffff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-top:25%;
+}
+
+a {
+    text-decoration: none;
+    background-color: #ffffff;
+    color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+a:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+input[type="file"] {
+    margin: 15px 0;
+}
+
+button {
+    background-color: #4facfe;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #007acc;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+form {
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 15px;
+}
+
+.home{
+    background-image: url("../images/bgc.jpg");
+    background-size: cover;
+    background-position:center 10%;
+}
+/* General container for charts */
+.chart-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Each chart card */
+.chart-card {
+  background: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+/* Chart images */
+.chart-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Chart titles */
+.chart-card h3 {
+  font-size: 1rem;
+  color: #1a3a6b;
+  margin: 0;
+}
+
